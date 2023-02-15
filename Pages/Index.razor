@@ -1,0 +1,162 @@
+﻿@page "/"
+
+
+
+<SfMediaQuery MediaBreakpoints="@mediaQuery" @bind-ActiveBreakpoint="activeBreakpoint"></SfMediaQuery>
+
+<b>Current Device Size is @activeBreakpoint</b>
+
+@{
+    string deviceSize = activeBreakpoint?.ToLowerInvariant() + "-device";
+}
+
+
+<div class="mediaquery-demo @deviceSize">
+    <div class="banner">
+        <label>Best Places to Visit in the United States</label>
+    </div>
+    <div class="main-container">
+        <label>New York</label>
+        <p>
+            New York City is like no other city in the world, and one that must be experienced to be fully appreciated.
+            For first-time visitors, walking the streets of Manhattan is a must, and the best way to do this is to take a walking tour.
+            The city is also home to some of the world’s most famous landmarks, including the Empire State Building, the Statue of Liberty, and the Brooklyn Bridge.
+        </p>
+        <div class="contentimage normal-view">
+            @for (int i = 0; i < places.Count(); i++)
+            {
+                <div class="fig-container">
+                    <figure class="img-container">
+                        <img src="@("/images/media-query/" + @places[i].Replace(" ", "_").ToLowerInvariant() + ".png")" alt="@places[i]" />
+                        <figcaption class="img-caption">@places[i]</figcaption>
+                    </figure>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code{
+    private string? activeBreakpoint { get; set; }
+    private string[] places = { "Empire State Building", "Central Park", "The High Line", "Statue of liberty", "Brooklyn Bridge", "Times Square" };
+    private List<MediaBreakpoint> mediaQuery { get; set; } = new List<MediaBreakpoint>()
+    {
+     new MediaBreakpoint() { Breakpoint = "Iphone", MediaQuery = "(max-width: 500px)" },
+     new MediaBreakpoint() { Breakpoint = "Desktop", MediaQuery = "(min-width: 1400px)" },
+     new MediaBreakpoint() { Breakpoint = "Ipad", MediaQuery = "(min-width: 900px)" },
+     new MediaBreakpoint() { Breakpoint = "Tablet", MediaQuery = "(min-width: 500px)" }
+    };
+}
+
+<style>
+    .contentimage.normal-view {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .contentimage .fig-container {
+        position: relative;
+        /*set the width to show 3 images in a row*/
+        width: 29%;
+        margin: 2%;
+        margin-bottom: calc( 2% + 3rem);
+    }
+
+    .contentimage .img-container {
+        height: 100%;
+        margin: 0;
+        margin: 2px;
+    }
+
+    .contentimage .img-container img {
+            aspect-ratio: 3 / 2;
+            width: 100%;
+            border-radius: 8px;
+    }
+
+    .contentimage .img-caption {
+        font-weight: bold;
+        position: absolute;
+        bottom: -3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mediaquery-demo {
+        margin: 0 1%;
+        border: 1px solid #f3f2f1;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .mediaquery-demo .banner {
+            background: linear-gradient(180deg, #E4EFFF 0%, rgba(182, 211, 255, 0) 100%);
+            height: 314px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+
+    .mediaquery-demo .banner label {
+                font-size: 48px;
+                width: 648px;
+                line-height: 1.25;
+                text-align: center;
+    }
+
+    .mediaquery-demo .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            line-height: 28px;
+            text-align: justify;
+            width: 75%;
+    }
+
+    .mediaquery-demo .main-container label {
+                font-weight: 600;
+                font-size: 24px;
+    }
+
+    .mediaquery-demo .main-container p {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 24px 0px;
+                margin: 0;
+    }
+
+        /* Large device */
+        .mediaquery-demo.desktop-device .contentimage .fig-container {
+            /*set the width to show 4 images in a row*/
+            width: 29%;
+        }
+
+        /* Large device */
+        .mediaquery-demo.ipad-device .contentimage .fig-container {
+            /*set the width to show 3 images in a row*/
+            width: 29.33%;
+        }
+
+        /* Medium device */
+        .mediaquery-demo.tablet-device .main-container {
+            width: 80%;
+        }
+
+        .mediaquery-demo.tablet-device .contentimage .fig-container {
+            /*set the width to show 2 images in a row*/
+            width: 46%;
+        }
+        /* Small device */
+        .mediaquery-demo.iphone-device .banner label {
+            font-size: 40px;
+            width: 265px;
+        }
+
+        .mediaquery-demo.iphone-device .contentimage .fig-container {
+            /*set the width to show 1 image in a row*/
+            width: 96%;
+        }
+
+      
+</style>                
