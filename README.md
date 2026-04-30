@@ -1,18 +1,52 @@
-# Getting Started with the Blazor Media Query Component
+## Getting Started with the Blazor Media Query Component
 
-A quick start Blazor project that shows how to add a Blazor Media Query component to the Blazor WebAssembly App. This project also includes a code snippet to design a responsive and adaptive layout with the Syncfusion Blazor Media Query Component. 
- 
-Refer to the following documentation to learn about the Blazor Media Query component: 
-https://blazor.syncfusion.com/documentation/media-query/getting-started
+**Repository Description**  
+This repository contains a Blazor WebAssembly sample that demonstrates how to integrate and use the Syncfusion Blazor Media Query component to build responsive and adaptive layouts.
 
-Check out this online example of the Blazor Media Query component:
-https://blazor.syncfusion.com/demos/media-query/default-functionalities?theme=fluent
+A quick start Blazor project that shows how to add a Blazor Media Query component to a Blazor WebAssembly application. The sample includes a working code snippet that highlights responsive behavior using media query breakpoints provided by the Syncfusion Blazor component library.
 
-Watch the following video to get started with a Blazor Web Assembly app and add Syncfusion Blazor components to it:
-https://www.youtube.com/watch?v=zKU580cOqjg
+## Project Overview
+This project focuses on demonstrating the usage of the Syncfusion Blazor Media Query component within a Blazor WebAssembly app. It helps developers understand how to design adaptive layouts that respond to screen size changes using predefined media queries.
 
-## Project prerequisites
-Make sure that you have the compatible versions of [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/ ) and [.NET Core SDK 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0) or later version in your machine before starting to work on this project.
+## Features
+- Integration of Syncfusion Blazor Media Query component  
+- Responsive and adaptive layout implementation  
+- Blazor WebAssembly–based sample project  
+- Ready‑to‑run setup using Visual Studio 2022  
 
-## How to run this application
-To run this application, you need to first clone the `getting-started-with-the-blazor-media-query-component` repository and then open it in Visual Studio 2022. Now, simply build and run your project to view the output.
+## Technologies Used
+- Blazor WebAssembly  
+- Syncfusion Blazor Components  
+- .NET 7.0 or later  
+
+## Documentation
+- Media Query Getting Started:  
+  >https://blazor.syncfusion.com/documentation/media-query/getting-started  
+
+## Online Demo
+- Blazor Media Query Demo:  
+  >https://blazor.syncfusion.com/demos/media-query/default-functionalities?theme=fluent  
+
+## Video Resource
+- Getting started with Blazor WebAssembly and Syncfusion components:  
+  >https://www.youtube.com/watch?v=zKU580cOqjg  
+
+## Project Prerequisites
+- Visual Studio 2022  
+- .NET SDK 7.0 or later  
+
+## How to Run This Application
+1. Clone the `getting-started-with-the-blazor-media-query-component` repository.
+2. Open the project in Visual Studio 2022.
+3. Build and run the application to view the Media Query component in action.
+
+## Troubleshooting
+
+- Ensure the correct .NET SDK version is installed.
+- Verify all Syncfusion Blazor packages are restored properly.
+- Confirm the project is running in Blazor WebAssembly mode.
+- Rebuild the solution if the Media Query component does not respond to screen size changes.
+- Check browser console logs for runtime or rendering errors.
+
+## Support
+Refer to the documentation and demo links above for usage guidance and API reference.
