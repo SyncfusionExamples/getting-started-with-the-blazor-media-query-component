@@ -1,6 +1,5 @@
 ## Getting Started with the Blazor Media Query Component
 
-**Repository Description**  
 This repository contains a Blazor WebAssembly sample that demonstrates how to integrate and use the Syncfusion Blazor Media Query component to build responsive and adaptive layouts.
 
 A quick start Blazor project that shows how to add a Blazor Media Query component to a Blazor WebAssembly application. The sample includes a working code snippet that highlights responsive behavior using media query breakpoints provided by the Syncfusion Blazor component library.
