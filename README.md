@@ -1,52 +1,61 @@
-## Getting Started with the Blazor Media Query Component
+# Getting Started with the Syncfusion Blazor Media Query Component
 
-**Repository Description**  
-This repository contains a Blazor WebAssembly sample that demonstrates how to integrate and use the Syncfusion Blazor Media Query component to build responsive and adaptive layouts.
+## Overview
 
-A quick start Blazor project that shows how to add a Blazor Media Query component to a Blazor WebAssembly application. The sample includes a working code snippet that highlights responsive behavior using media query breakpoints provided by the Syncfusion Blazor component library.
+This sample demonstrates how to use the Syncfusion [Blazor Media Query](https://www.syncfusion.com/blazor-components/blazor-mediaquery) mbly application to create responsive and adaptive user interfaces. The implementation detects viewport size changes and updates UI content based on media query breakpoints. This approach helps developers deliver optimized experiences across desktop, tablet, and mobile devices while keeping the application logic inside Blazor components.
 
-## Project Overview
-This project focuses on demonstrating the usage of the Syncfusion Blazor Media Query component within a Blazor WebAssembly app. It helps developers understand how to design adaptive layouts that respond to screen size changes using predefined media queries.
+The sample focuses on responsive design patterns using Syncfusion Blazor components and provides a practical reference for implementing adaptive layouts in modern Blazor applications.
 
-## Features
-- Integration of Syncfusion Blazor Media Query component  
-- Responsive and adaptive layout implementation  
-- Blazor WebAssembly–based sample project  
-- Ready‑to‑run setup using Visual Studio 2022  
+## Key Features
 
-## Technologies Used
-- Blazor WebAssembly  
-- Syncfusion Blazor Components  
-- .NET 7.0 or later  
+- Uses the Syncfusion Media Query component to evaluate screen-width changes.
+- Demonstrates responsive UI rendering based on configured media query breakpoints.
+- Dynamically adapts application content according to detected viewport size.
+- Registers Syncfusion Blazor services through `builder.Services.AddSyncfusionBlazor()`.
+- Runs as a Blazor WebAssembly application.
+- Includes a dedicated Razor page (`Pages/Index.razor`) that demonstrates responsive layout behavior using the Media Query component.
+- Shows how adaptive layouts can be implemented without manually writing JavaScript viewport detection logic.
 
-## Documentation
-- Media Query Getting Started:  
-  >https://blazor.syncfusion.com/documentation/media-query/getting-started  
+## Prerequisites
 
-## Online Demo
-- Blazor Media Query Demo:  
-  >https://blazor.syncfusion.com/demos/media-query/default-functionalities?theme=fluent  
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
 
-## Video Resource
-- Getting started with Blazor WebAssembly and Syncfusion components:  
-  >https://www.youtube.com/watch?v=zKU580cOqjg  
+## How to Run the Project
 
-## Project Prerequisites
-- Visual Studio 2022  
-- .NET SDK 7.0 or later  
+**Visual Studio 2022**
 
-## How to Run This Application
-1. Clone the `getting-started-with-the-blazor-media-query-component` repository.
-2. Open the project in Visual Studio 2022.
-3. Build and run the application to view the Media Query component in action.
+1. Clone this repository.
+2. Open the repository folder in Visual Studio 2022.
+3. Restore NuGet packages.
+4. Set the Blazor WebAssembly project as the startup project if required.
+5. Build the project.
+6. Run the application using **Ctrl+F5**.
 
-## Troubleshooting
+**Visual Studio Code**
 
-- Ensure the correct .NET SDK version is installed.
-- Verify all Syncfusion Blazor packages are restored properly.
-- Confirm the project is running in Blazor WebAssembly mode.
-- Rebuild the solution if the Media Query component does not respond to screen size changes.
-- Check browser console logs for runtime or rendering errors.
+1. Clone this repository.
+2. Open the repository folder in Visual Studio Code.
+3. Open the integrated terminal.
+4. Navigate to the project directory.
 
-## Support
-Refer to the documentation and demo links above for usage guidance and API reference.
+```bash
+dotnet restore
+dotnet run
+```
+
+5. Open the local application URL displayed in the terminal after the application starts.
+
+## Project Structure
+
+- `Pages/Index.razor` — Primary sample page demonstrating the Syncfusion Media Query component and responsive layout behavior.
+
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- For implementation details, see the https://blazor.syncfusion.com/documentation/media-query/getting-started.
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
