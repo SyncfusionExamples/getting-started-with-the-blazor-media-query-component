@@ -1,12 +1,12 @@
 ## Getting Started with the Blazor Media Query Component
 
 **Repository Description**  
-This repository contains a Blazor WebAssembly sample that demonstrates how to integrate and use the Syncfusion Blazor Media Query component to build responsive and adaptive layouts.
+This repository contains a .NET 10 Blazor WebAssembly sample that demonstrates how to integrate and use the Syncfusion Blazor Media Query component to build responsive and adaptive layouts.
 
 A quick start Blazor project that shows how to add a Blazor Media Query component to a Blazor WebAssembly application. The sample includes a working code snippet that highlights responsive behavior using media query breakpoints provided by the Syncfusion Blazor component library.
 
 ## Project Overview
-This project focuses on demonstrating the usage of the Syncfusion Blazor Media Query component within a Blazor WebAssembly app. It helps developers understand how to design adaptive layouts that respond to screen size changes using predefined media queries.
+This project focuses on demonstrating the usage of the Syncfusion Blazor Media Query component within a standalone Blazor WebAssembly app. It helps developers understand how to design adaptive layouts that respond to screen size changes using media query breakpoints.
 
 ## Features
 - Integration of Syncfusion Blazor Media Query component  
@@ -17,7 +17,8 @@ This project focuses on demonstrating the usage of the Syncfusion Blazor Media Q
 ## Technologies Used
 - Blazor WebAssembly  
 - Syncfusion Blazor Components  
-- .NET 7.0 or later  
+- .NET 10
+- Syncfusion.Blazor.Core and Syncfusion.Blazor.Themes 35.2.13
 
 ## Documentation
 - Media Query Getting Started:  
@@ -32,13 +33,12 @@ This project focuses on demonstrating the usage of the Syncfusion Blazor Media Q
   >https://www.youtube.com/watch?v=zKU580cOqjg  
 
 ## Project Prerequisites
-- Visual Studio 2022  
-- .NET SDK 7.0 or later  
+- .NET 10 SDK
 
 ## How to Run This Application
 1. Clone the `getting-started-with-the-blazor-media-query-component` repository.
-2. Open the project in Visual Studio 2022.
-3. Build and run the application to view the Media Query component in action.
+2. From the project directory, run `dotnet run`.
+3. Open the displayed local URL to view the responsive Media Query sample.
 
 ## Troubleshooting
 
